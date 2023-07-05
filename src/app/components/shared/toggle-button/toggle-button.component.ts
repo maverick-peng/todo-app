@@ -12,7 +12,7 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
   `,
   styles: [`
     :host {
-      @apply flex items-center h-full;
+      @apply w-12;
     }
   `],
   providers: [
