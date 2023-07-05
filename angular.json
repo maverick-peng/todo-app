@@ -23,7 +23,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/todo-app/",
             "outputPath": "dist/todo-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,8 +53,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/todo-app/"
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,
@@ -63,8 +61,7 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true,
-              "baseHref": "/todo-app/"
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"

@@ -1,5 +1,5 @@
 ## Live demo
-Check out the [live demo](https://maverick-peng.github.io/todo-app/)
+Check out the [live demo](https://todo-app-delta-flax.vercel.app/)
 ## Introduction
 The Todo App is a web-based application that help user manages their tassk and stay organized.
 This documentation provides an overview of the app's features, installation instructions, and usage guidelines.
