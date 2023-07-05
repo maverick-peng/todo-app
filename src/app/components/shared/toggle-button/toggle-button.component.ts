@@ -9,8 +9,11 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
   template: `
     <input #input [checked]="checked" (change)="handleChange(input.checked)" [disabled]="disabled" type="checkbox" class="ml-auto appearance-none relative before:content-[''] h-6 before:block before:w-12 before:h-6 before:rounded-full before:bg-white before:shadow-inner-lg before:align-middle after:content-[''] after:block after:w-5 after:h-5 after:bg-slate-200 after:rounded-full after:absolute after:top-[2px] after:left-[2px] checked:after:bg-green-600 checked:after:left-[1.6rem] checked:after:transition-all" />
   `,
-  styles: [
-  ],
+  styles: [`
+    :host {
+      @apply flex items-center;
+    }
+  `],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

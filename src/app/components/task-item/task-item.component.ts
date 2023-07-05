@@ -12,10 +12,12 @@ import { SubjectTodoService } from '../../core/services/subject-todo.service';
   imports: [CommonModule, ReactiveFormsModule, ToggleButtonComponent, DeleteButtonComponent],
   template: `
     <li class="p-3 shadow-md relative">
-      <div class="flex gap-2">
+      <div class="flex justify-between gap-2">
         <p class="text-ellipsis overflow-hidden"><strong>{{ task.title }}</strong></p>
-        <span *ngIf="task.completed" class="ml-auto inline-block text-green-400">Done</span>
-        <app-toggle-button [ngClass]="{'right': !task.completed}" [formControl]="completedControl"></app-toggle-button>
+        <div class="flex items-center gap-2">
+          <span *ngIf="task.completed" class="inline-block text-green-400">Done</span>
+          <app-toggle-button [ngClass]="{'right': !task.completed}" [formControl]="completedControl"></app-toggle-button>
+        </div>
       </div>
       <hr class="my-2">
       <p class="min-h-[0.5rem]">{{ task.descp }}</p>
