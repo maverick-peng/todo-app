@@ -1,5 +1,3 @@
-# TodoApp
-
 ## Live demo
 Check out the [live demo](https://maverick-peng.github.io/todo-app/)
 ## Introduction
